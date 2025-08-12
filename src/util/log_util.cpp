@@ -46,6 +46,8 @@ static void log_structured(const std::string &level, const std::string &message)
             std::chrono::system_clock::now())},
         {"thread", thread_id_ss.str()}
     };
+
+    std::cout << log_entry.dump() << "\n";
 }
 
 static void log(const std::string &level, const std::string &message, bool structured) {

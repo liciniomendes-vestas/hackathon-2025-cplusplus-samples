@@ -83,7 +83,7 @@ int main() {
         }
 
         logger.info("Worker loop finished, will run again in 15 seconds");
-        condition_variable.wait_for(lock, std::chrono::seconds(1));
+        condition_variable.wait_for(lock, std::chrono::seconds(15));
     }
 
     logger.info("Shutting down gracefully...");
