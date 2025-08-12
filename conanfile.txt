@@ -1,0 +1,12 @@
+[requires]
+opentelemetry-cpp/1.21.0
+libpqxx/7.10.1
+nlohmann_json/3.11.3
+fmt/11.2.0
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout

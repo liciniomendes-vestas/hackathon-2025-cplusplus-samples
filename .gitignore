@@ -1,0 +1,11 @@
+vcpkg_installed/
+CMakeFiles/
+cmake-build-debug/
+.idea/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+vcpkg-manifest-install.log
+.cmake/
+CMakeUserPresets.json
+bld/
