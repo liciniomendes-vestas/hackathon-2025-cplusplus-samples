@@ -13,9 +13,9 @@ static void log_plain(const std::string &level, const std::string &message) {
     using namespace std::chrono;
 
     // Get current time
-    auto now = system_clock::now();
-    auto now_time_t = system_clock::to_time_t(now);
-    auto now_ms = duration_cast<milliseconds>(now.time_since_epoch()) % 1000;
+    const auto now = system_clock::now();
+    const auto now_time_t = system_clock::to_time_t(now);
+    const auto now_ms = duration_cast<milliseconds>(now.time_since_epoch()) % 1000;
 
     // Format timestamp (YYYY-MM-DD HH:MM:SS.mmm)
     std::ostringstream oss;
@@ -39,7 +39,7 @@ static void log_structured(const std::string &level, const std::string &message)
     std::ostringstream thread_id_ss;
     thread_id_ss << std::this_thread::get_id();
 
-    nlohmann::json log_entry = {
+    const nlohmann::json log_entry = {
         {"level", level},
         {"message", message},
         {"timestamp", std::chrono::system_clock::to_time_t(
