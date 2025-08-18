@@ -47,7 +47,11 @@ void initDatabase() {
     }
     else {
         logger.info("CONNECTION_STRING set. Starting database setup.");
-        db.init();
+        try {
+            db.init();
+        } catch (const std::runtime_error& e) {
+            logger.error(fmt::format("Failed to initialize database - {}", e.what()));
+        }
     }
 }
 
