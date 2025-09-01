@@ -47,7 +47,7 @@ static void log_structured(const std::string &level, const std::string &message)
         {"thread", thread_id_ss.str()}
     };
 
-    std::cout << log_entry.dump() << "\n";
+    std::cout << log_entry.dump() << std::endl;
 }
 
 static void log(const std::string &level, const std::string &message, bool structured) {
