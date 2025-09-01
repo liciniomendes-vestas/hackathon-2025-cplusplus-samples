@@ -3,4 +3,4 @@ applications:
   - name: hackathon-cpp-app
     containers:
       - name: sample-app 
-        image: ghcr.io/liciniomendes-vestas/hackathon-2025-cplusplus-samples/sample-app:master
+        image: registry-pminds.ns-azweu-stg.vks.vestas.net/hackathon-2025-cplusplus-samples/sample-app:master
