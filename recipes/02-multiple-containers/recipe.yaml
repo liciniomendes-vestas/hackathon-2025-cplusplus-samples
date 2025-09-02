@@ -5,4 +5,4 @@ applications:
       - name: sample-app 
         image: registry-pminds.ns-azweu-stg.vks.vestas.net/hackathon-2025-cplusplus-samples/sample-app:sha-060881b
       - name: database
-        image: registry-pminds.ns-azweu-stg.vks.vestas.net/hackathon-2025-cplusplus-samples/sample-db:sha-060881b
+        image: registry-pminds.ns-azweu-stg.vks.vestas.net/hackathon-2025-cplusplus-samples/sample-db:sha-16a95ba

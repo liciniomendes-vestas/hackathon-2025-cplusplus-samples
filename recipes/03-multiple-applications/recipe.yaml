@@ -7,7 +7,7 @@ applications:
   - name: hackathon-database
     containers:
       - name: database
-        image: registry-pminds.ns-azweu-stg.vks.vestas.net/hackathon-2025-cplusplus-samples/sample-db:sha-060881b
+        image: registry-pminds.ns-azweu-stg.vks.vestas.net/hackathon-2025-cplusplus-samples/sample-db:sha-16a95ba
         volumes:
           - name: data
             path: /var/lib/postgresql/data
