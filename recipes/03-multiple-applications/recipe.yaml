@@ -3,14 +3,15 @@ applications:
   - name: hackathon-cpp-app
     containers:
       - name: sample-app 
-        image: registry-pminds.ns-azweu-stg.vks.vestas.net/hackathon-2025-cplusplus-samples/sample-app:master
+        image: registry-pminds.ns-azweu-stg.vks.vestas.net/hackathon-2025-cplusplus-samples/sample-app:sha-060881b
   - name: hackathon-database
     containers:
       - name: database
-        image: registry-pminds.ns-azweu-stg.vks.vestas.net/hackathon-2025-cplusplus-samples/sample-db:master
+        image: registry-pminds.ns-azweu-stg.vks.vestas.net/hackathon-2025-cplusplus-samples/sample-db:sha-060881b
         volumes:
           - name: data
             path: /var/lib/postgresql/data
             size: 200Mi
+            persistent: true
     ports:
       - port: 5432
